@@ -28,10 +28,10 @@ This application allows users to easily book Pujaris for their religious ceremon
 
 This project includes multiple dashboards with protected routes:
 
-- `[Show live](https://pujari-booking-next-js-tailwind.vercel.app/userdashboard)`
 - [Show live](https://pujari-booking-next-js-tailwind.vercel.app/userdashboard)
-- `[Show pujaridashboard](https://pujari-booking-next-js-tailwind.vercel.app/pujaridashboard)`
-- `[Show superadmin](https://pujari-booking-next-js-tailwind.vercel.app/superadmin)`
+- [Show live](https://pujari-booking-next-js-tailwind.vercel.app/userdashboard)
+- [Show pujaridashboard](https://pujari-booking-next-js-tailwind.vercel.app/pujaridashboard)
+- [Show superadmin](https://pujari-booking-next-js-tailwind.vercel.app/superadmin)
 
 Originally, these routes were protected with authentication checks. However, since the backend is currently inactive, the authentication code has been temporarily commented out.
 
