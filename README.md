@@ -13,7 +13,10 @@ This application allows users to easily book Pujaris for their religious ceremon
 - Pujaris can register, create, and manage their own profiles.
 - Integrated working calendar to display and manage available booking dates.
 - Multiple dashboards tailored for users, Pujaris, and superadmins to manage bookings and accounts efficiently.
-
+- Additional pages for browsing services, contacting support, and managing bookings.
+- Detailed single Pujari profile pages with booking options.
+- Booking calendar page for easy selection of available dates.
+- Shopping cart functionality to manage multiple bookings or puja services before checkout.
 ---
 
 ## Technologies Used
