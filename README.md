@@ -14,8 +14,9 @@ This project includes multiple dashboards with protected routes:
 Originally, these routes were protected with authentication checks. However, since the backend is currently inactive, the authentication code has been temporarily commented out.
 
 As a result, you can now access all routes directly via their links without restrictions.
-
 Once the backend is active again, the protected routes will be re-enabled to secure these pages.
+
+
 ---
 
 ## About the App
