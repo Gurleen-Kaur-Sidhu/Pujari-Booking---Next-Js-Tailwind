@@ -1,0 +1,206 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+:root {
+  --background: #fffaf3;
+  --brown: #991b1b;
+  --card: #faf4e5;
+  --text: #373f27;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  font-weight: 700; 
+  font-size: 0.875rem; 
+  color: white;
+  background-color: var(--brown);
+  padding: 0.5rem 1.25rem; 
+  border-radius: 9999px; 
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: #7f1616;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-image img {
+  height: 500px !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .testimonial-section {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .grid-booking {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .filter-div {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-page {
+    flex-direction: column;
+  }
+
+  .filter-div {
+    width: 100%;
+  }
+
+  .pandit-booking-page {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-image , .booknow-messagebtn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booknow-messagebtn .book-now{
+    width:100%;
+  }
+}
+
+.booknow-image {
+  height: 250px !important;
+  width: 250px !important;
+}
+
+.scroll-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Custom calendar styling */
+.fc {
+  font-family: inherit;
+  background-color: var(--card);
+  color: var(--text);
+}
+
+.fc .fc-toolbar-title {
+  color: var(--brown);
+  font-weight: bold;
+}
+
+.fc-button {
+  background-color: var(--brown) !important;
+  border: none !important;
+  color: white !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  text-transform: capitalize !important;
+}
+
+.fc-button:hover {
+  background-color: #7c1818 !important;
+}
+
+.fc-button-primary:not(:disabled):active,
+.fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #7c1818 !important;
+}
+
+.fc-daygrid-event {
+  background-color: var(--brown) !important;
+  border: none !important;
+  color: white !important;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.fc .fc-button-group {
+  gap: 10px;
+}
+
+.fc .fc-button-primary:focus {
+  box-shadow: none !important;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.fc-view-harness.fc-view-harness-active {
+  background-color: white;
+}
+
+.fc .fc-daygrid-day-number {
+  font-weight: 600;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brown);
+}
+.fc-timegrid-slot-label {
+  color: var(--brown);
+  font-weight: 500;
+}
+
+.fc-timegrid-slot {
+  background-color: var(--background);
+}
+
+.fc .fc-daygrid-event-harness {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+  .fc .fc-toolbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+}
